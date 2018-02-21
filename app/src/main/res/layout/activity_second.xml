@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxwell.pitapp2018.MainActivity">
+
+    <EditText
+        android:id="@+id/robotWeight"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
+        android:layout_column="1"
+        android:layout_marginLeft="16dp"
+        android:layout_row="0"
+        android:hint="Robot Weight"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/robotHeight"
+        android:layout_width="177dp"
+        android:layout_height="54dp"
+        android:layout_column="1"
+        android:layout_marginLeft="16dp"
+        android:layout_row="0"
+        android:hint="Robot Height"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="149dp"
+        android:layout_height="134dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/startLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Left"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/startMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Middle"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/startRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Right"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:layout_column="0"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_row="8"
+        android:gravity="start"
+        android:text="Vault:"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_column="0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_row="5"
+        android:text="Frame:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robotHeight" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_row="0"
+        android:text="Weight(Pounds):"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_row="0"
+        android:text="Starting Height(Inches):"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robotWeight" />
+
+    <ToggleButton
+        android:id="@+id/shootVault"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_column="2"
+        android:layout_marginEnd="36dp"
+        android:layout_row="3"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textOff="No Vault"
+        android:textOn="Vault"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="225dp"
+        android:layout_height="29dp"
+        android:layout_column="0"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_row="0"
+        android:text="How Do They Climb?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="208dp"
+        android:layout_height="29dp"
+        android:layout_column="0"
+        android:layout_marginTop="24dp"
+        android:layout_row="0"
+        android:text="Preferred Auto"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/frameType"
+        android:layout_width="wrap_content"
+        android:layout_height="193dp"
+        android:layout_column="1"
+        android:layout_marginLeft="16dp"
+        android:layout_row="5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/wood"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Wood"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/kitbot"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Kit Bot"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/steel"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Steel"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/aluminum"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:text="Aluminum"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/frameOther"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Other"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="179dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="672dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/noClimb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No Climb"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/yesClimb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Climb"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/climbCarry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Carry a Robot"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/climbSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Robot Climbs On"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <RadioButton
+            android:id="@+id/codeJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Java"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/codeC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C++"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/codeLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LabView"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/codeOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Other"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Code:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shootVault" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/noScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No Scale"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/fourFeet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4 Feet"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/fiveFeet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5 Feet"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/sixFeet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6 Feet"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="197dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="How Far Can They Reach On Scale?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameType" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_column="2"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="128dp"
+        android:layout_row="20"
+        android:onClick="sendFile"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_column="1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="144dp"
+        android:layout_row="20"
+        android:onClick="saveFile"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
